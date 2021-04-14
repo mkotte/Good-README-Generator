@@ -18,6 +18,11 @@ const questions = [
         name: 'description',
         message: 'What would you like for your project description?'
     },{
+        type: 'list',
+        name: 'screenshot',
+        message: 'Would you like to add a section for screenshots to use later on?',
+        choices: [ 'Yes', 'No' ]
+    },{
         type: 'input',
         name: 'installationInstructions',
         message: 'What would you like for your installation instructions?'
@@ -37,7 +42,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'What would you like to use for your license?',
-        choices: [ 'Apache2.0', 'GPL3.0', 'MIT', 'none' ]
+        choices: [ 'Apache2.0', 'GPL3.0', 'MIT', 'None' ]
     },{
         type: 'input',
         name: 'gitHub',
@@ -63,10 +68,5 @@ const init = () => {
 };
 
 init();
-
-
-
-
-// create writeFile function using promises instead of a callback function
 
 
