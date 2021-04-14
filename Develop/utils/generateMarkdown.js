@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Returns a license badge 
 function renderLicenseBadge(license) {
   if(license !== 'none'){
     //license badge link here
@@ -10,23 +9,34 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// Returns the license link
 function renderLicenseLink(license) {
-
+  if(license !== none){
+    // license link here
+  }else{
+    return ''
+  }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// Returns the license section of README
 function renderLicenseSection(license) {
-
+  if(license !== none){
+    // license description w/ link here
+  }else{
+    return ''
+  }
 }
 
+// Optional screenshot section to be updated w/ content at a later time
 function renderScreenshotSection(option){
-
+  if(option !== 'No'){
+    return '##Screenshot'
+  }else{
+    return ''
+  }
 }
 
-// TODO: Create a function to generate markdown for README
+// generating markdown for the README.md file
 function generateMarkdown(data) {
   return `
     # ${data.title}
