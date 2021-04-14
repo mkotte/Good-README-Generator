@@ -36,7 +36,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if(license !== 'none'){
     // license description w/ link here
-    return `This repository is using the ${license} license, for more information visit [here](${renderLicenseLink})`
+    return `This repository is using the ${license} license, for more information visit [here](${renderLicenseLink(license)})`
   }else{
     return ''
   }
@@ -55,10 +55,11 @@ function renderScreenshotSection(option){
 function generateMarkdown(data) {
   
   return `# ${data.title}
+
   ${renderLicenseBadge(data.license)}
     
   ## Table of Contents
-  - [Description](#description)/n
+  - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
@@ -67,23 +68,29 @@ function generateMarkdown(data) {
   - [Questions?](#questions-?)
 
   ## Description
+
   ${data.description}
     
   ${renderScreenshotSection(data.screenshot)}
 
   ## Installation Instructions
+
   ${data.installationInstructions}
 
   ## Contribution Guidelines
+
   ${data.contributionGuidelines}
 
   ## Test Instructions
+
   ${data.testInstructions}
 
-  ##License
+  ## License
+
   ${renderLicenseSection(data.license)}
 
   ## Links
+
   - Github [Profile](https://github.com/${data.gitHub})
   - Email: ${data.email}`
  
