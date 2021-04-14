@@ -49,8 +49,8 @@ const questions = [
         message: 'What is your github username?'
     },{
         type: 'input',
-        name: 'linkedIn',
-        message: 'What is your linkedIn url?'
+        name: 'email',
+        message: 'What is your email?'
     }
 ];
 
