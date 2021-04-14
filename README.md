@@ -60,5 +60,5 @@ While Creating this README Generator I:
 
 [Video Link](https://drive.google.com/file/d/1hThWmgBj2xqqPDIcBHYpvT7Vocq8wsDC/view?usp=sharing)
 
-[Sample Readme Link](https://github.com/mkotte/Good-README-Generator/assets/sample_README.md)
+[Sample Readme Link](https://github.com/mkotte/Good-README-Generator/blob/main/assets/sample_README.md)
 
