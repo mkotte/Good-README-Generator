@@ -8,8 +8,8 @@ const util = require('util');
 const questions = [
     {
         type: 'input',
-        name: 'projectTitle',
-        message: 'What is your projects title?',
+        name: 'title',
+        message: 'What is your repos title?',
     },{
         type: 'input',
         name: 'description',
@@ -38,11 +38,11 @@ const questions = [
     },{
         type: 'input',
         name: 'gitHub',
-        message: 'What is your github?'
+        message: 'What is your github username?'
     },{
         type: 'input',
         name: 'linkedIn',
-        message: 'What is your linkedIn?'
+        message: 'What is your linkedIn url?'
     }
 ];
 
