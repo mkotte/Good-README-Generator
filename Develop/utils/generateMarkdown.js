@@ -2,7 +2,6 @@
 function renderLicenseBadge(license) {
   if(license !== 'none'){
     //license badge link here 
-    console.log('2')
     return `![license badge](https://img.shields.io/badge/License-${license}-brightgreen)` 
   }else{
     return ''
@@ -13,7 +12,21 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   if(license !== 'none'){
     // license link here
-    return ``
+    let licenseQuery ='';
+    // switch to determine the license linkes query required
+    switch(license){
+      case 'Apache2.0':
+        licenseQuery = 'Apache-2.0';
+        break;
+      case 'GPL3.0':
+        licenseQuery = 'GPL-3.0';
+        break;
+      case 'MIT':
+        licenseQuery = 'MIT';
+        break;
+    }
+    
+    return `(https://opensource.org/licenses/${licenseQuery})`
   }else{
     return ''
   }
@@ -23,7 +36,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if(license !== 'none'){
     // license description w/ link here
-    return ``
+    return `This repository is using the ${license} license, for more information visit [here](${renderLicenseLink})`
   }else{
     return ''
   }
