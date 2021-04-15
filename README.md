@@ -54,7 +54,7 @@ While Creating this README Generator I:
 
 ## Media
 
-![Video Link](/assets/walkthrough.webm)
+[Video Link](https://drive.google.com/file/d/17m0-zf36d-tCrc161uuwqspuE3X0NBVs/view?usp=sharing)
 
 [Sample Readme Link](https://github.com/mkotte/Good-README-Generator/blob/main/assets/sample_README.md)
 
